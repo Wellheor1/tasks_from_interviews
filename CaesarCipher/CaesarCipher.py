@@ -1,14 +1,14 @@
 print("Введите сообщение: ")
 message = input()
 print("Введите ключ: ")
-shift = input()
+shift_key = input()
 print("Введенная строка: ", message)
 
 
 def encrypt_caesar(msg: str, shift: int = 3) -> str:
     result = ""
     for i in msg:
-        result += chr(ord(i)+shift)
+        result += chr(ord(i) + shift)
     return result
 
 
